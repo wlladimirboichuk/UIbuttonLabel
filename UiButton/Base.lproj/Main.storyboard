@@ -23,6 +23,22 @@
                                     <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6j-yf-lcW"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4o-k7-5hT">
+                                <rect key="frame" x="178.5" y="508" width="57" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Action 2"/>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="39C-cC-dZE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkr-Zj-wS3">
+                                <rect key="frame" x="178.5" y="421" width="55" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Action 1"/>
+                                <connections>
+                                    <action selector="pressedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zk5-xX-UiI"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc2-ee-E33">
                                 <rect key="frame" x="138" y="187" width="151" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -37,6 +53,8 @@
                     <connections>
                         <outlet property="button" destination="Zwq-5y-rAg" id="SZR-dw-2Iv"/>
                         <outlet property="label" destination="nc2-ee-E33" id="rdm-XM-C5F"/>
+                        <outletCollection property="actionButtons" destination="Zkr-Zj-wS3" collectionClass="NSMutableArray" id="aHk-Zm-tEO"/>
+                        <outletCollection property="actionButtons" destination="K4o-k7-5hT" collectionClass="NSMutableArray" id="dYL-TC-Hkg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
